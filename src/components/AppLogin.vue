@@ -3,20 +3,22 @@
   <dialog  :open="open">
     <h3>{{$t('loginModal.title')}}</h3>
 <form @submit.prevent="login"  class="form-container">
-  <div class="form-field">
+  <form-field>
     <label for="email">{{$t('email')}}</label>
     <input required v-model.trim="form.email" type="email" id="email">
-  </div>
-  <div class="form-field">
+  </form-field>
+  <form-field>
     <label for="username">{{$t('username')}}</label>
     <input required v-model.trim="form.username" type="text" id="username">
-  </div>
-  <div class="form-field">
+  </form-field>
+  <form-field>
     <label for="password">{{$t('password')}}</label>
     <input required v-model.trim="form.password" type="password" id="password">
-  </div>
+  </form-field>
   <div class="buttons">
-    <button @click="closeDialog" style="background-color: red">{{$t('close')}}</button>
+    <button type="submit"
+            @click="closeDialog"
+            style="background-color: red">{{$t('close')}}</button>
     <button type="submit" style="background-color: green">{{$t('login')}}</button>
   </div>
 </form>
@@ -26,11 +28,13 @@
 </template>
 
 <script>
+import FormField from '@/components/UI/FormField.vue';
+
 export default {
   name: 'Login',
+  components: { FormField },
   data() {
     return {
-      dialog: false,
       form: {
         email: '',
         username: '',
@@ -41,19 +45,22 @@ export default {
   props: {
     open: {
       type: Boolean,
-      default: false,
     },
     close: {
       type: Function,
     },
   },
   methods: {
-    login() {
-      this.$store.dispatch('login', this.form);
+    async login() {
+      await this.$store.dispatch('login', this.form);
+      this.form = {
+        email: '',
+        username: '',
+        password: '',
+      };
+      this.closeDialog();
     },
     closeDialog() {
-      /*      this.form.username = '';
-      this.form.password = ''; */
       this.close();
     },
   },
@@ -75,7 +82,6 @@ dialog {
   .form-container {
     padding: 10px;
     .form-field {
-
       width: 100%;
       margin: 10px 0;
       input {
@@ -92,7 +98,6 @@ dialog {
         color: grey;
       }
     }
-
   }
   .buttons {
     display: flex;

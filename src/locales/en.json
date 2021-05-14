@@ -1,35 +1,21 @@
 {
-  "common": {
-    "bcp47": "en",
-    "send": "Send",
-    "save": "Save",
-    "clear": "Clear",
-    "back": "Back",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "login": "Sign In",
-    "logout": "Sign Out",
-    "search": "Search"
+"hello": "hello",
+  "close": "Close",
+  "login": "Login",
+  "email": "E-Mail",
+  "username": "Name",
+  "password": "Password",
+  "phone": "Phone Number",
+  "country": "Country",
+  "text": "Description",
+  "send": "Send",
+  "clear": "Clear",
+  "main": {
+    "title": "Welcome to Homepage",
+    "content": "Donec finibus pharetra lorem, nec congue nisl pretium in. Curabitur lacus orci, tincidunt quis interdum eu, lacinia non nisl. Ut sit amet lectus tincidunt, ultrices turpis ac, tincidunt mauris. In tempor dictum vestibulum. Ut non tincidunt leo, et commodo risus. In eget est iaculis, pulvinar diam ac, pretium tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vitae cursus mauris. Sed eleifend varius erat, eleifend convallis leo rutrum et. Sed porttitor finibus tellus, vitae dapibus nisl pharetra ac. Sed pellentesque neque sed tortor porta, et convallis ex hendrerit. Nam eget odio libero. Etiam in sapien egestas metus auctor gravida. Phasellus pellentesque, tellus eget tincidunt sollicitudin, nisi enim elementum enim, consectetur rhoncus orci justo id urna. Pellentesque consequat porttitor mollis. Aenean eget tincidunt ligula, a posuere quam.\n\n"
   },
-  "welcome": {
-    "welcome": "Welcome to Mastit-X tracking application.",
-    "desc": "A little explanation about application"
-  },
-  "login": {
-    "email": "Please enter e-mail address",
-    "emailError": "Please enter valid e-mail",
-    "password": "Enter your password",
-    "passwordError": "Password must be at least 6 characters",
-    "register": "Register",
-    "title": "Mastit-X Tracking Application"
-  },
-  "register": {
-    "title": "Please fill the form for registration",
-    "name": "Your first and last name",
-    "businessType": "Choose bussiness type",
-    "typeFarm": "Farm",
-    "typeVet": "Labs",
-    "info": "Please write some information about your business",
-    "formError": "Can not be blank"
+  "loginModal": {
+    "title": "Please fill the form"
   }
+
 }

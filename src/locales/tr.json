@@ -1,144 +1,21 @@
 {
-  "common": {
-    "bcp47": "tr",
-    "send": "Gönder",
-    "save": "Kaydet",
-    "clear": "Temizle",
-    "back": "Geri dön",
-    "cancel": "İptal Et",
-    "delete": "Sil",
-    "login": "Giriş Yap",
-    "logout": "Çıkış Yap",
-    "loading": "Yükleniyor.. Lütfen bekleyiniz.",
-    "email": "E-Mail Adresi",
-    "password": "Şifre",
-    "ok": "Tamam",
-    "error": "İşlem sırasında hata oluştu!",
-    "success": "İşleminiz başarıyla gerçekleştirildi.",
-    "edit": "Düzenle",
-    "search": "Ara",
-    "download": "İndir",
-    "upload": "Yükle",
-    "deleteAnimal": "nolu hayvan silinecek.",
-    "start": "Başlat"
+  "hello": "Merhaba",
+  "close": "Kapat",
+  "login": "Giriş",
+  "email": "E-Mail",
+  "username": "Adınız",
+  "password": "Şifre",
+  "phone": "Telefon Numarası",
+  "country": "Ülke",
+  "text": "Açıklama",
+  "send": "Gönder",
+  "clear": "Temizle",
+  "main": {
+    "title": "Anasayfaya Hoşgeldiniz",
+    "content": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.\n\n"
   },
-  "welcome": {
-    "welcome": "Mastit-X Takip Uygulamasına Hoşgeldiniz.",
-    "desc": "Buraya kısa birkaç açıklama ekleyebiliriz ayrıca genel olarak birkaç fotoğraf koyarak kısa bir tanıtım metni görsellerle yer alabilir. Bir çeşit karşılma ekranı"
-  },
-  "login": {
-    "email": "E-Mail Adresini Giriniz",
-    "emailError": "Lütfen geçerli bir mail adresi giriniz.",
-    "password": "Şifreyi Giriniz",
-    "passwordError": "Şifre en az 6 karakterden oluşmalıdır.",
-    "login": "Giriş Yap",
-    "register": "Kayıt Ol",
-    "title": "Mastit-X Takip Uygulaması"
-  },
-  "register": {
-    "title": "Kayıt Ol",
-    "name": "Adınız ve Soyadınız",
-    "businessType": "İşlet Tipini Seçiniz",
-    "typeFarm": "Çiftlik",
-    "typeVet": "Laboratuvar",
-    "info": "İşletmenizle ilgili bilgi verir misiniz?",
-    "formError": "Lütfen bu alanı boş bırakmayınız.",
-    "success": "Mesajınız gönderildi.",
-    "sendError": "Mesaj gönderilirken hata oluştu.",
-    "companyName": "İşletmenizin adı",
-    "phoneNo": "Telefon Numarası",
-    "phoneError": "Telefon numarası 10 haneli olmalıdır.",
-    "phoneError2": "Telefon numarası sadece rakamlardan oluşmalıdır.."
-  },
-  "menu": {
-    "database": "Hayvan Veritabanı",
-    "myBusinesses": "İşletmelerim",
-    "application": "Kültür Uygulaması",
-    "antibiyogram": "Antibiyogram",
-    "sickroom": "Revir",
-    "tasks": "Görevler",
-    "infoData": "Bilgi Bankası",
-    "support": "Destek",
-    "userSettings": "Kullanıcı İşlemleri"
-  },
-  "createUser": {
-    "create": "Kullanıcı oluştur",
-    "answer": "Cevap",
-    "message": "Kullanıcı başarıyla oluşturuldu. Lütfen kullanıcı bilgilerini kaydediniz.",
-    "selectRole": "Kullanıcı Rolünü Seçiniz",
-    "name": "Şirket Adı",
-    "databaseName": "Veritabanı Adı",
-    "databaseError1": "Veritabanı Boş olamaz",
-    "databaseError2": "Veritabı isminde boşluk ve türkçe karakter olamaz.",
-    "cancel": "İptal"
-  },
-  "notfound": {
-    "title": "Aradığınız sayfaya ulaşamadık!",
-    "description": "Ne yazik ki bir hata oluştu ve aradığınız sayfaya ulaşamadık. Birazdan ana sayfaya yönlendirileceksiniz.",
-    "btn": "Anasayfa'ya git",
-    "remain": "Saniye kaldı"
-  },
-  "addAnimals": {
-    "add": "Hayvan Ekle",
-    "id": "Hayvan Id",
-    "race": "Hayvan Irkı",
-    "group": "Grup",
-    "age": "Yaşı",
-    "farmName": "Çiftlik Adı",
-    "birthYear":"Doğum Yılı",
-    "animalDatabase": "Hayvan Veritabanı",
-    "addGroupOrFarms": "Grup veya Çiftlik eklemek için tıklayınız",
-    "idError": "Bu ID kayıtlıdır."
-  },
-  "mail": {
-    "title": "Hoşgeldiniz | Mastisis-X",
-    "welcome": "Sizi aramızda görmekten memnuniyet duyduk! Hoşgeldiniz!",
-    "accountInfo": "Hesap Bilgileriniz",
-    "username": "Kullanıcı Adınız: ",
-    "password": "Şifreniz: ",
-    "notShare": "Lütfen şifrenizi kimseyle paylaşmayınız.",
-    "desc": "Aşağıdaki linkten sisteme hemen ulaşabişir, bilgilerinizle giriş yapabilirsiniz.",
-    "link": "Mastisis'e Git."
-  },
-  "import": {
-    "importExcel": "Excel'den Yükle",
-    "simpleFile": "Örnek Dosyayı indir",
-    "selectFile": "Dosya Seç (.xlsx, .xls)",
-    "error1": "Tablo formatı uygun değil! Örnek tabloyu indirerek işlemi tamamlayınız.",
-    "error2": "Tabloda fazla sutün var. Örnek tablodan sütun silmeyiniz ya da eklemeyiniz.",
-    "error3": "Bu alanı boş geçemezsiniz.",
-    "error4": "Çiftlik adı sisteme kayıtlı değil: ",
-    "error5": "çiftliğinde bu grup yok: ",
-    "error6": " numaralı id sistemde kayıtldır."
-  },
-  "defaults": {
-    "dialogTitle": "İşlemi Onaylayınız.",
-    "cancelMessage": "İşlem iptal edildi.",
-    "dialogBody": "Bu işlem geri alınamaz, devam etmek istediğinize emin misiniz?"
-  },
-  "businesses": {
-    "addGroup": "Yeni Grup Ekle",
-    "groupName": "Grup Adını Giriniz",
-    "groupsDescription": "Grup için açıklama yazınız",
-    "addFarm": "Yeni Çiftlik Ekle",
-    "farmName": "Çiftlik Adını Yazınız",
-    "farmDescription": "Çiftlik için açıklama yazınız.",
-    "selectFarm": "Çiftlik Seçiniz",
-    "groupError": "Bu grup daha önceden eklenmiş, lütfen başka bir isim veriniz.",
-    "farmError": "Bu çiftlik ismi kullanımdadır, başka bir isim deneyiniz."
-  },
-  "startTest": {
-    "start": "Testi Başlat",
-    "sample": "Numune",
-    "rightBack": "Sağ Arka Meme",
-    "rightFront": "Sağ Ön Meme",
-    "leftBack": "Sol Arka Meme",
-    "leftFront": "Sol Ön Meme",
-    "noTest": "Devam eden test yok",
-    "kulturTest": "Kültür Uygulaması",
-    "inTest": "Test Sürecinde",
-    "noGroup": "Seçilen çiftliğin grubu yoktur.",
-    "startAntiBiyoram": "Anti Biyogramı Başlat",
-    "timeDone": "Süre doldu."
+  "loginModal": {
+    "title": "Formu doldurunuz"
   }
+
 }
