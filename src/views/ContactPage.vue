@@ -6,7 +6,7 @@
         <input required v-model.trim="form.email" type="email" id="email">
       </form-field>
       <form-field>
-        <label for="name">{{$t('name')}}</label>
+        <label for="name">{{$t('username')}}</label>
         <input required v-model.trim="form.name" type="text" id="name">
       </form-field>
       <form-field>

@@ -6,6 +6,7 @@
   "username": "Name",
   "password": "Password",
   "phone": "Phone Number",
+  "footer": "All rights reserved.",
   "country": "Country",
   "text": "Description",
   "send": "Send",
