@@ -2,6 +2,7 @@
   "hello": "Merhaba",
   "close": "Kapat",
   "login": "Giriş",
+  "logout":"Çıkış",
   "email": "E-Mail",
   "username": "Adınız",
   "password": "Şifre",

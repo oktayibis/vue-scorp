@@ -2,18 +2,18 @@
 
   <dialog  :open="open">
     <h3>{{$t('loginModal.title')}}</h3>
-<form @submit.prevent="login"  class="form-container">
+<form @submit.prevent="login"  class="form-container" >
   <form-field>
     <label for="email">{{$t('email')}}</label>
-    <input required v-model.trim="form.email" type="email" id="email">
+    <input name="email" required v-model.trim="form.email" type="email" id="email">
   </form-field>
   <form-field>
     <label for="username">{{$t('username')}}</label>
-    <input required v-model.trim="form.username" type="text" id="username">
+    <input name="username" required v-model.trim="form.username" type="text" id="username">
   </form-field>
   <form-field>
     <label for="password">{{$t('password')}}</label>
-    <input required v-model.trim="form.password" type="password" id="password">
+    <input name="password" required v-model.trim="form.password" type="password" id="password">
   </form-field>
   <div class="buttons">
     <button type="submit"
@@ -53,11 +53,9 @@ export default {
   methods: {
     async login() {
       await this.$store.dispatch('login', this.form);
-      this.form = {
-        email: '',
-        username: '',
-        password: '',
-      };
+      this.form.email = '';
+      this.form.username = '';
+      this.form.password = '';
       this.closeDialog();
     },
     closeDialog() {

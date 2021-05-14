@@ -15,12 +15,12 @@
                   :key="lang.value">{{lang.display}}</option>
         </select>
       </li>
-      <li v-if="!userStatus" @click.stop="openLogin">Login</li>
+      <li v-if="!userStatus" @click.stop="openLogin">{{$t('login')}}</li>
       <li v-if="userStatus" @click.stop="isUserInfo=!isUserInfo">
         User
         <div v-if="isUserInfo" class="user-info">
           <p>{{userInfo.email}}</p>
-          <button type="button" @click.stop="logout">Logout</button>
+          <button type="button" @click.stop="logout">{{$t('logout')}}</button>
         </div>
       </li>
     </ul>
