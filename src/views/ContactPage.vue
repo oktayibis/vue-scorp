@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <form>
+    <form @submit.prevent="send">
       <form-field>
         <label for="email">{{$t('email')}}</label>
         <input required v-model.trim="form.email" type="email" id="email">
@@ -17,12 +17,18 @@
         >
       </form-field>
       <form-field>
-        <label for="email">{{$t('country')}}</label>
-        <select required v-model="form.country_code" name="country" id="country">
-          <option v-for="country in countries"
+        <label for="countrySearch">{{$t('country')}}</label>
+        <input v-model="form.country_code"
+               id="countrySearch"
+               name="country"
+               required
+               list="country" />
+        <datalist id="country" >
+          <option  v-for="country in countries"
                   :value="country.id"
-                  :key="country.id">{{country.name}}</option>
-        </select>
+                  :key="country.id">{{country.name}}
+          </option>
+        </datalist>
       </form-field>
       <form-field>
         <label for="text">{{$t('text')}}</label>
@@ -56,16 +62,6 @@ export default {
         country_code: '',
         text: '',
       },
-      countries: [
-        { id: 'TR', name: 'Turkey' },
-        { id: 'US', name: 'United States of America' },
-        { id: 'GB', name: 'United Kingdom' },
-        { id: 'DE', name: 'Germany' },
-        { id: 'SE', name: 'Sweden' },
-        { id: 'KE', name: 'Kenya' },
-        { id: 'BR', name: 'Brazil' },
-        { id: 'ZW', name: 'Zimbabwe' },
-      ],
     };
   },
   methods: {
@@ -79,6 +75,20 @@ export default {
     },
     isUserAuth() {
       return this.$store.getters.isUserAuth;
+    },
+    countries() {
+      return (
+        [
+          { id: 'TR', name: this.$t('countries.tr') },
+          { id: 'US', name: this.$t('countries.us') },
+          { id: 'DE', name: this.$t('countries.de') },
+          { id: 'GB', name: this.$t('countries.gb') },
+          { id: 'SE', name: this.$t('countries.se') },
+          { id: 'KE', name: this.$t('countries.ke') },
+          { id: 'BR', name: this.$t('countries.br') },
+          { id: 'ZW', name: this.$t('countries.zw') },
+        ]
+      );
     },
   },
   watch: {
