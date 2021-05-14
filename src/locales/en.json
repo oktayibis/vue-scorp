@@ -1,0 +1,35 @@
+{
+  "common": {
+    "bcp47": "en",
+    "send": "Send",
+    "save": "Save",
+    "clear": "Clear",
+    "back": "Back",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "login": "Sign In",
+    "logout": "Sign Out",
+    "search": "Search"
+  },
+  "welcome": {
+    "welcome": "Welcome to Mastit-X tracking application.",
+    "desc": "A little explanation about application"
+  },
+  "login": {
+    "email": "Please enter e-mail address",
+    "emailError": "Please enter valid e-mail",
+    "password": "Enter your password",
+    "passwordError": "Password must be at least 6 characters",
+    "register": "Register",
+    "title": "Mastit-X Tracking Application"
+  },
+  "register": {
+    "title": "Please fill the form for registration",
+    "name": "Your first and last name",
+    "businessType": "Choose bussiness type",
+    "typeFarm": "Farm",
+    "typeVet": "Labs",
+    "info": "Please write some information about your business",
+    "formError": "Can not be blank"
+  }
+}
